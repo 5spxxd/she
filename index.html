@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+
+  <div class="slide">
+    <div class="item" style="background-image: url(7.jpg);">
+      <div class="content">
+        <div class="name">15/09/2024</div>
+        <div class="des">A New Chapter I Guess?</div>
+        <a href="15092024.html" target="_blank">
+          <button>See more</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url(1.jpg);">
+      <div class="content">
+        <div class="name">05/06/2022</div>
+        <div class="des">Someone's else wedding, but it felt like mine</div>
+        <a href="t.html" target="_blank">
+          <button>See more</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url(2.jpg);">
+      <div class="content">
+        <div class="name">21/01/2023</div>
+        <div class="des">Our First Step Roaming Around Together</div>
+        <a href="21012023.html" target="_blank">
+          <button>See more</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url(3.jpg);">
+      <div class="content">
+        <div class="name">03/06/2023</div>
+        <div class="des">Much Simple, Quality Time</div>
+        <a href="03062023.html" target="_blank">
+          <button>See more</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url(4.jpg);">
+      <div class="content">
+        <div class="name">12/08/2023</div>
+        <div class="des">To Celebrate An Old Soul And Genuine Love</div>
+        <a href="12082023.html" target="_blank">
+          <button>See more</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url(5.jpg);">
+      <div class="content">
+        <div class="name">13/04/2024</div>
+        <div class="des">Love Isn't Something To Be Forced By</div>
+        <a href="13042024.html" target="_blank">
+          <button>See more</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="button">
+    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+
+  <!-- Audio player with play and pause buttons -->
+  <div class="audio-player">
+    <button id="play-button"><i class="fa-solid fa-play"></i></button>
+    <button id="pause-button" style="display: none;"><i class="fa-solid fa-pause"></i></button>
+    <audio id="audio" src="song.mp3"></audio>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('audio');
+    const playButton = document.getElementById('play-button');
+    const pauseButton = document.getElementById('pause-button');
+
+    playButton.addEventListener('click', function() {
+        audio.play();
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'inline';
+    });
+
+    pauseButton.addEventListener('click', function() {
+        audio.pause();
+        pauseButton.style.display = 'none';
+        playButton.style.display = 'inline';
+    });
+});
+</script>
+
+</body>
+</html>
